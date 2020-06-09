@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6f9ff"
+    tools:context=".Guide.Tourist.DetailBookActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar1213"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+            android:background="@drawable/toolbar"/>
+
+        <ImageView
+            android:id="@+id/place_image"
+            android:layout_below="@+id/toolbar1213"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"/>
+        <TextView
+            android:id="@+id/place_name"
+            android:layout_width="match_parent"
+            android:layout_below="@id/place_image"
+            android:layout_height="wrap_content"
+            android:text="Place Name"
+            android:fontFamily="@font/montserrat"
+            android:textSize="30sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/place_entryfee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/place_name"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@android:color/background_dark"/>
+        <TextView
+            android:id="@+id/place_timings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat"
+            android:layout_below="@+id/place_entryfee"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/background_dark"/>
+
+        <TextView
+            android:id="@+id/place_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Place"
+            android:layout_below="@id/place_timings"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginTop="10dp"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="20dp"
+            android:textSize="20sp"
+            />
+        <Button
+            android:id="@+id/bookguide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/place_description"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_layout"
+            android:text="Show Guides"
+            android:fontFamily="@font/montserrat"
+            android:textAllCaps="false" />
+    </RelativeLayout>
+</ScrollView>

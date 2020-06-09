@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6f9ff"
+    tools:context=".Guide.Tourist.Searchbyplace">
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_alignParentStart="true">
+        <EditText
+            android:id="@+id/search_edit_place"
+            android:layout_width="290dp"
+            android:layout_marginTop="4dp"
+            android:layout_height="40dp"
+            android:hint="Search"
+            android:inputType="textCapSentences"
+            android:background="@drawable/search"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            app:et_supportMaxLines="1"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/montserrat"
+            android:textSize="20sp"
+            />
+        <Button
+            android:id="@+id/searchbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:fontFamily="@font/montserrat"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@color/endblue"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/search_edit_place"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/guide_list_place"
+        android:layout_below="@+id/relativelayout"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</RelativeLayout>

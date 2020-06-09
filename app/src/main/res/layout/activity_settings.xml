@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6f9ff"
+    tools:context=".Guide.Tourist.SettingsActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:layout_alignParentStart="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/update"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="20dp"
+                android:text="Update"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settin_profile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/download"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/profilechange"
+        android:layout_below="@+id/settin_profile"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Profile"
+        android:textAlignment="center"/>
+    <EditText
+        android:id="@+id/settin_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Name"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat"
+        android:layout_below="@+id/profilechange"/>
+    <EditText
+        android:id="@+id/setting_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Phone"
+        android:padding="10dp"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/settin_name"/>
+    <EditText
+        android:id="@+id/setting_Language"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Language"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat"
+        android:layout_below="@+id/setting_phone"/>
+    <Button
+        android:id="@+id/Security_questions"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add Security Questions"
+
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_layout"
+        android:layout_below="@+id/setting_Language"/>
+
+</RelativeLayout>

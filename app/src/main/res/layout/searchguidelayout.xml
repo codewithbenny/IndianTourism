@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:elevation="6dp"
+    android:layout_margin="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image97"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            />
+        <TextView
+            android:id="@+id/name97"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="Name"
+            android:fontFamily="@font/montserrat"
+            android:layout_toRightOf="@+id/image97"
+            android:textColor="@android:color/background_dark"/>
+        <TextView
+            android:id="@+id/phn97"
+            android:drawableRight="@drawable/ic_call_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="Phone No."
+            android:fontFamily="@font/montserrat"
+
+            android:layout_below="@+id/name97"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/image97"
+            android:textColor="@android:color/background_dark"/>
+        <TextView
+            android:id="@+id/language97"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="Language Known"
+            android:fontFamily="@font/montserrat"
+
+            android:layout_below="@id/phn97"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/image97"
+            android:textColor="@android:color/background_dark"/>
+        <TextView
+            android:id="@+id/place97"
+            android:layout_below="@+id/language97"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:hint="Place"
+            android:fontFamily="@font/montserrat"
+
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/image97"
+            android:textColor="@android:color/background_dark"/>
+        <TextView
+            android:id="@+id/city97"
+            android:layout_below="@+id/place97"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:hint="City"
+            android:fontFamily="@font/montserrat"
+
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/image97"
+            android:textColor="@android:color/background_dark"/>
+        <TextView
+            android:id="@+id/payscale97"
+            android:layout_marginLeft="5dp"
+            android:hint="Payscale"
+            android:layout_below="@+id/city97"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat"
+            android:layout_toRightOf="@+id/image97"
+            android:textColor="@android:color/background_dark"/>
+        <TextView
+            android:id="@+id/exp97"
+            android:layout_below="@+id/payscale97"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:hint="Experience"
+            android:fontFamily="@font/montserrat"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/image97"
+            android:textColor="@android:color/background_dark"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image97"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/book97"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Book Now"
+
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_layout"
+            android:textAllCaps="false"
+            android:fontFamily="@font/montserrat"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/chat97"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Chat Now"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_layout"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

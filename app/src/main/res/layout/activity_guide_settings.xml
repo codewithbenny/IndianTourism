@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e6f9ff"
+    tools:context=".Guide.GuideSettingsActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/idclose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Close"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idupdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="20dp"
+                android:text="Update"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/gradientbackground"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/setting_profile"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/download"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                >
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/profilechange1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Profile"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/setting_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:drawableLeft="@drawable/ic_agent"
+            android:drawablePadding="10dp"
+            android:hint="Name" />
+        <EditText
+            android:id="@+id/setting_phone1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Phone"
+            android:fontFamily="@font/montserrat"
+            android:drawableLeft="@drawable/ic_iphone"
+            android:drawablePadding="10dp"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/setting_Language1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Language"
+            android:fontFamily="@font/montserrat"
+            android:drawableLeft="@drawable/ic_language"
+            android:drawablePadding="10dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/setting_guide_city"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="City"
+            android:fontFamily="@font/montserrat"
+            android:drawableLeft="@drawable/ic_worldwide"
+            android:drawablePadding="10dp"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/setting_guide_places"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Known Places"
+            android:fontFamily="@font/montserrat"
+            android:drawableLeft="@drawable/ic_place"
+            android:padding="10dp"
+            android:drawablePadding="10dp"/>
+
+        <EditText
+            android:id="@+id/setting_payscale"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="PayScale"
+            android:drawableLeft="@drawable/ic_money"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/montserrat"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/setting_guide_eperience"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Experience"
+            android:drawableLeft="@drawable/ic_experience"
+            android:drawablePadding="10dp"
+            android:inputType="number"
+            android:maxLength="2"
+            android:fontFamily="@font/montserrat"
+            android:padding="10dp" />
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

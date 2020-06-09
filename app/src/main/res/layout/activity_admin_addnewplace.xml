@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#e6f9ff"
+    android:layout_height="match_parent"
+    tools:context=".Guide.AdminAddnewplaceActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/Select_Place_image"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/select_product_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/place_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Select_Place_image"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:hint="Place Name"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/input_design"
+
+        />
+<!--    <EditText-->
+<!--        android:id="@+id/place_description"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/place_name"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:padding="20dp"-->
+<!--        android:hint=" Place Description here"-->
+<!--        android:layout_marginLeft="45dp"-->
+<!--        android:layout_marginRight="45dp"-->
+<!--        android:background="@drawable/input_design"/>-->
+    <EditText
+        android:id="@+id/place_entryfee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/place_name"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:hint="Entry fee here"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/input_design"/>
+    <EditText
+        android:id="@+id/place_timings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/place_entryfee"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:hint=" Place timings here"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/input_design"
+
+        />
+        <EditText
+            android:id="@+id/place_fuldes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/place_timings"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:hint=" Place timings here"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/input_design"
+
+            />
+        <EditText
+            android:id="@+id/place_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/place_timings"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:hint=" Place Url here"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/input_design"
+
+            />
+
+
+    <Button
+        android:id="@+id/addnewplace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="17dp"
+        android:background="@drawable/button_layout"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:text="Add new Place"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/place_url"/>
+    <Button
+        android:id="@+id/approve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="17dp"
+        android:background="@drawable/button_layout"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:text="Update Places"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/addnewplace"/>
+    </RelativeLayout>
+</ScrollView>

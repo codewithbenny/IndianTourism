@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Guide.Tourist.LogintouristActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:background="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/input_phn"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/input_design"
+        android:drawableLeft="@drawable/ic_iphone"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/montserrat"
+        android:maxLength="10"
+        android:hint="Enter mobile no."
+        android:inputType="number"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/input_phn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_design"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="10dp"
+        android:fontFamily="@font/montserrat"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:id="@+id/Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_password"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+
+    </LinearLayout>
+    <Button
+
+        android:id="@+id/login_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_layout"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/Linear"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="15dp"
+        android:padding="17dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:text="Login"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat"
+        />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/createaac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:layout_above="@+id/forgetpassword"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/montserrat"/>
+
+    <TextView
+        android:id="@+id/forgetpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:fontFamily="@font/montserrat"
+        />
+
+</RelativeLayout>

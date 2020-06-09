@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.india.tourism">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyFirebaseApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Cities"></activity>
+        <activity android:name=".Guide.Tourist.Notifications" />
+        <activity android:name=".About" />
+        <activity android:name=".Guide.Tourist.ResetPasswordActivity" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GuidechatActivity" />
+        <activity android:name=".Guide.Tourist.ChatActivity" />
+        <activity android:name=".GuidedetailActivity" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".Guide.Tourist.Searchbylanguage" />
+        <activity android:name=".Guide.Tourist.Searchbyplace" />
+        <activity android:name=".Guide.Tourist.Searchbycity" />
+        <activity android:name=".Guide.Tourist.ConfirmGuide" />
+        <activity android:name=".Guide.GuideSettingsActivity" />
+        <activity android:name=".Guide.Tourist.GuideDetailsforUserActivity" />
+        <activity android:name=".Guide.GuideHomeActivity" />
+        <activity android:name=".Guide.GuideLogin" />
+        <activity android:name=".Guide.AdminApproveguideActivity" />
+        <activity android:name=".Guide.ApproveguideActivity" />
+        <activity android:name=".Guide.Tourist.SettingsActivity" />
+        <activity android:name=".Guide.Tourist.AvailableguidesActivity" />
+        <activity android:name=".Guide.GuideRegisterActivity" />
+        <activity android:name=".Guide.Tourist.DetailBookActivity" />
+        <activity
+            android:name=".Guide.Tourist.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Guide.AdminAddnewplaceActivity"></activity>
+        <activity android:name=".Guide.Tourist.LogintouristActivity" />
+        <activity android:name=".Guide.Tourist.IamActivity"
+            android:noHistory="true"/>
+        <activity android:name=".Guide.Tourist.RegisterActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

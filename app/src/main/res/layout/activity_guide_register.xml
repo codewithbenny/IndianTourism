@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6f9ff"
+    tools:context=".Guide.GuideRegisterActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_margin="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_height="match_parent"
+            android:text="Create Your Account">
+
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/guidename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/ic_id_card"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/montserrat"/>
+        <EditText
+            android:id="@+id/guidephn"
+            android:layout_width="match_parent"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:inputType="phone"
+            android:layout_height="wrap_content"
+            android:hint="Enter your phone"
+            android:drawableLeft="@drawable/ic_iphone"
+            android:fontFamily="@font/montserrat"
+            android:drawablePadding="10dp"            />
+        <EditText
+            android:id="@+id/guidepassword"
+            android:fontFamily="@font/montserrat"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/Language_spoken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:fontFamily="@font/montserrat"
+            android:hint=" Your languages"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_language"
+            android:drawablePadding="10dp"/>
+        <EditText
+            android:id="@+id/Enter_city"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:fontFamily="@font/montserrat"
+            android:layout_height="wrap_content"
+            android:hint="Your City"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_worldwide"/>
+        <EditText
+            android:id="@+id/places_known"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:layout_margin="10dp"
+            android:hint="Places You Guide"
+            android:fontFamily="@font/montserrat"
+            android:drawableLeft="@drawable/ic_place"
+            android:drawablePadding="10dp"
+            />
+        <EditText
+            android:id="@+id/payscale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Payscale Per Hour"
+            android:inputType="number"
+            android:fontFamily="@font/montserrat"
+            android:drawableLeft="@drawable/ic_money"
+            android:drawablePadding="10dp"
+            android:layout_margin="10dp"
+                        />
+        <EditText
+            android:id="@+id/experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Experience in years"
+            android:maxLength="2"
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/montserrat"
+            android:drawableLeft="@drawable/ic_experience"
+            />
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_layout"
+            android:text="Create Account"
+           />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "387926485174",
+    "firebase_url": "https://tourism-f280e.firebaseio.com",
+    "project_id": "tourism-f280e",
+    "storage_bucket": "tourism-f280e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387926485174:android:329b3aa30f927d164d1e17",
+        "android_client_info": {
+          "package_name": "com.india.tourism"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "387926485174-rp7g6unhm9vdksi2n097r9msf077qr3p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.india.tourism",
+            "certificate_hash": "cea4d44d2b43b8fda463881dcdd2f998626d6325"
+          }
+        },
+        {
+          "client_id": "387926485174-aruh0c302mc3078iamj0d65hl1g7v7kl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDkP7E4Tvklv2DndQNWDOHIMkzI07EH-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "387926485174-aruh0c302mc3078iamj0d65hl1g7v7kl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

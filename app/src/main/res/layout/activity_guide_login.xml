@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Guide.GuideLogin"
+        android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:background="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/input_phn1"
+            android:layout_marginTop="300dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Phone No."
+            android:inputType="number"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/input_design"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_iphone"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/montserrat"
+            android:paddingLeft="10dp"
+
+            />
+        <EditText
+            android:id="@+id/input_password1"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/input_phn1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:fontFamily="@font/montserrat"
+            android:background="@drawable/input_design"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            />
+        <LinearLayout
+            android:id="@+id/Linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_password1"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+
+        </LinearLayout>
+        <Button
+
+            android:id="@+id/login_btn1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_layout"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/Linear"
+            android:layout_centerInParent="true"
+            android:padding="17dp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:text="Login"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginTop="20dp"
+
+
+            />
+    <TextView
+        android:id="@+id/forgetpassword1"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/createaac1"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+
+        />
+
+
+
+        <TextView
+            android:id="@+id/createaac1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_btn1"
+            android:text="Don't have an account"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginTop="50dp"/>
+
+
+    </RelativeLayout>

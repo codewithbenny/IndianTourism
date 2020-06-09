@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6f9ff"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/searchtoolbar"
+        android:layout_width="match_parent"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="All Available Guides"
+            android:textAlignment="textStart"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_below="@id/searchtoolbar"
+    android:id="@+id/recycler1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+</RelativeLayout>
